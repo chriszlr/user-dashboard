@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
+import Widgets from "@/components/Widgets";
 import Head from "next/head";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
       </Head>
       <main className="bg-gray-100 min-h-screen">
         <Header />
+        <Widgets />
       </main>
     </>
   );
