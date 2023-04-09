@@ -7,6 +7,7 @@ import morgan from "morgan";
 
 // import routes
 import customerRoutes from "./routes/customer-routes.js";
+import orderRoutes from "./routes/order-routes.js";
 
 // initialize express app
 const app = express();
@@ -20,6 +21,7 @@ app.use(morgan("dev"));
 
 // routes
 app.use("/api/customers", customerRoutes);
+app.use("/api/orders", orderRoutes);
 
 // connect to database & listen to port
 mongoose
